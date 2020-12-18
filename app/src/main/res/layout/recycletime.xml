@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cardid"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txthour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6:15 PM"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#687189"
+                />
+            <TextView
+                android:id="@+id/txtaudi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audi: #09"
+                android:textColor="#8690A0"
+                android:textSize="15sp"
+                android:layout_marginStart="25dp"
+                />
+            <TextView
+                android:id="@+id/txtfilling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filling Fast"
+                android:textColor="#FF9F00"
+                android:layout_marginStart="25dp"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

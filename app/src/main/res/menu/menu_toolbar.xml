@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:title="Home"
+        android:id="@+id/m_home"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="Profile" android:id="@+id/m_Profile" android:icon="@drawable/ic_user" />
+    <item android:title="Search" android:icon="@drawable/ic_search" android:id="@+id/m_search"/>
+
+</group>
+    <item android:title="category">
+        <menu>
+            <item android:title="Action" android:id="@+id/Action"></item>
+            <item android:title="romantic" android:id="@+id/romantic"></item>
+            <item android:title="horror" android:id="@+id/horror"/>
+            <item android:title="drama" android:id="@+id/drama"/>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:title="Log out" android:id="@+id/m_Log_out" android:icon="@drawable/ic_exit"/>
+        </menu>
+    </item>
+
+</menu>

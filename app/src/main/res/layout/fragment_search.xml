@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bk2"
+tools:context=".fragment.Search"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:maxEms="10"
+        android:paddingStart="10dp"
+        android:layout_weight="10"
+        android:id="@+id/txt_input_search"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/bk_tiket"
+        android:hint="     Movies,Actors,Directory.."
+        />
+    <ImageView
+        android:id="@+id/btn_search"
+        android:background="@color/primary"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_search"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearSe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent"
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginStart="19dp"
+            />
+
+        <TextView
+            android:id="@+id/view_all_search"
+            android:gravity="end"
+            android:paddingEnd="15dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/recy4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular"
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginStart="19dp"
+            />
+        <TextView
+            android:gravity="end"
+            android:paddingEnd="15dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/recy5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+

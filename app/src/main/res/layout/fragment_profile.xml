@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".Fragment.Profile">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profail" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/name_pr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Gussie McKinney"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+<LinearLayout
+        android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/city_pr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:text="London"
+    android:textColor="#fff"
+    android:textSize="15sp"
+    android:textStyle="bold" />
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text=","
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/country_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="UK"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/profile1" />
+
+            <ImageView
+                android:id="@+id/Edit_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profail"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="150dp"
+                />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cont"
+                app:layout_constraintTop_toBottomOf="@id/lin12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/card1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/card2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/card3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Name"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    />
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Rosie Roberts"
+                    android:textColor="@color/white"
+                    android:textColorHint="#72FFFFFF"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Email"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <EditText
+                    android:textColorHint="#72FFFFFF"
+                    android:enabled="false"
+                    android:id="@+id/txtp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Your Email"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:text="Password" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:text="Name"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="845 Elsie Hill Suite 516"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zipcode"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="07229-8601"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="city"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:textColorHint="#72FFFFFF"
+                    android:enabled="false"
+                    android:id="@+id/txtp6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="London"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textSize="15sp"
+                    android:textColor="#CBD7E9"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtp7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="UK"
+                    android:textColorHint="#72FFFFFF"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bk_tiket"
+                        android:id="@+id/btnSavep"
+                        android:layout_marginBottom="15dp"
+                        />
+
+
+            </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout></ScrollView>
+
+
+
+
+

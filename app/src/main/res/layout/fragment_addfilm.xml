@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".fragment.addfilm">
+<ImageView
+    android:id="@+id/add_img"
+    android:layout_marginTop="20dp"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:src="@drawable/ic_launcher_background"
+    />
+
+    <Spinner
+
+        android:textColor="@color/primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/add_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk_tiket"
+        android:entries="@array/category"
+        />
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/add_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Film Name"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/add_time"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:hint="Film time"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/add_price"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="film price"
+        android:textColorHint="@color/white"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btn_add_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add film"
+        android:textColor="@color/primary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bk_tiket"/>
+
+
+</LinearLayout>
